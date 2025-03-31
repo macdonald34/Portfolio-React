@@ -1,0 +1,104 @@
+/* About.css */
+.about {
+    padding: 6rem 0;
+    background: #fff;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 3rem;
+  }
+  
+  .about-text {
+    flex: 1;
+  }
+  
+  .about-text h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #2d3748;
+  }
+  
+  .about-text p {
+    margin-bottom: 1.5rem;
+    color: #4a5568;
+    line-height: 1.8;
+  }
+  
+  .about-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .about-details div h4 {
+    font-size: 1rem;
+    color: #718096;
+    margin-bottom: 0.5rem;
+  }
+  
+  .about-details div p {
+    font-size: 1.1rem;
+    color: #2d3748;
+    font-weight: 500;
+  }
+  
+  .about-image {
+    flex: 1;
+    position: relative;
+  }
+  
+  .about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease;
+  }
+  
+  .about-image:hover img {
+    transform: translateY(-10px);
+  }
+  
+  .about-image::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #667eea;
+    border-radius: 10px;
+    top: -20px;
+    left: -20px;
+    z-index: -1;
+    transition: all 0.3s ease;
+  }
+  
+  .about-image:hover::before {
+    top: -15px;
+    left: -15px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1024px) {
+    .about-content {
+      flex-direction: column;
+    }
+    
+    .about-image {
+      margin-top: 3rem;
+      max-width: 500px;
+    }
+    
+    .about-image::before {
+      top: -15px;
+      left: -15px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-details {
+      grid-template-columns: 1fr;
+    }
+  }

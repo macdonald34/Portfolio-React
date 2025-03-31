@@ -1,0 +1,97 @@
+/* Skills.css */
+.skills {
+    padding: 6rem 0;
+    background: #fff;
+  }
+  
+  .skills-container {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 3rem;
+  }
+  
+  .skills-list {
+    flex: 1;
+  }
+  
+  .skill-item {
+    margin-bottom: 1.5rem;
+  }
+  
+  .skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  
+  .skill-info span:first-child {
+    font-weight: 600;
+    color: #2d3748;
+  }
+  
+  .skill-info span:last-child {
+    color: #667eea;
+    font-weight: 600;
+  }
+  
+  .skill-bar {
+    height: 10px;
+    background: #edf2f7;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .skill-progress {
+    height: 100%;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    position: relative;
+    transition: width 1.5s ease;
+  }
+  
+  .skill-progress::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, 
+      rgba(255, 255, 255, 0.1) 0%, 
+      rgba(255, 255, 255, 0.3) 50%, 
+      rgba(255, 255, 255, 0.1) 100%);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+  
+  @keyframes shimmer {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+  
+  .skills-image {
+    flex: 1;
+  }
+  
+  .skills-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1024px) {
+    .skills-container {
+      flex-direction: column;
+    }
+    
+    .skills-image {
+      margin-top: 3rem;
+      max-width: 500px;
+    }
+  }
