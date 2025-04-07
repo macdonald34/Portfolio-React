@@ -34,20 +34,23 @@ const Contact = () => {
             <p>Feel free to reach out to me for any questions or opportunities!</p>
             <div className="info-item">
               <i className="fas fa-envelope"></i>
-              <span>your.email@example.com</span>
+              <span>macdonaldmuhavi98@gmail.com</span>
             </div>
             <div className="info-item">
               <i className="fas fa-phone"></i>
-              <span>+1 (123) 456-7890</span>
+              <span>+254 (074) 0940-735</span>
             </div>
             <div className="info-item">
               <i className="fas fa-map-marker-alt"></i>
-              <span>Your City, Country</span>
+              <span>Nairobi, Kenya</span>
             </div>
             <div className="social-links">
-              <a href="#" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
-              <a href="#" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
+              <a href="https://github.com/macdonald34" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/macdonald-muhavi-90178928b/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
+              <a href="" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
               <a href="#" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/makithe_maky/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
+              
             </div>
           </div>
           <form onSubmit={handleSubmit} className="contact-form">

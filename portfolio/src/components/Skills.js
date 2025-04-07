@@ -1,5 +1,6 @@
 import React from 'react';
 import './Skills.css';
+import skillsImage from '../assets/images/skills-image.png'; // Ensure you have an image in this path
 
 const skills = [
   { name: 'HTML', level: 95 },
@@ -10,6 +11,8 @@ const skills = [
   { name: 'Git', level: 75 },
   { name: 'UI/UX Design', level: 65 },
   { name: 'TypeScript', level: 60 },
+  { name: 'Python' , level: 50},
+  { name: 'Flask' , level: 50},
 ];
 
 const Skills = () => {
@@ -35,7 +38,7 @@ const Skills = () => {
             ))}
           </div>
           <div className="skills-image">
-            <img src="/skills-image.jpg" alt="Skills" />
+            <img src={skillsImage} alt="Skills" />
           </div>
         </div>
       </div>

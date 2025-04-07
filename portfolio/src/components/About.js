@@ -1,6 +1,8 @@
 // src/components/About.js
 import React from 'react';
 import './About.css';
+import aboutImage from '../assets/images/about-image.jpg'; // Ensure you have an image in this path
+
 
 const About = () => {
   return (
@@ -19,7 +21,7 @@ const About = () => {
               With a background in design, I bring a unique perspective to development, 
               focusing on both functionality and aesthetics.
             </p>
-            <p>I am still passionate and eager to learn and work with others either independently or physically with colleagus.</p>
+            <p>I remain passionate and eager to learn, collaborating effectively both independently and in team settings.</p>
             <div className="about-details">
               <div>
                 <h4>Name:</h4>
@@ -40,7 +42,7 @@ const About = () => {
             </div>
           </div>
           <div className="about-image">
-            <img src="./src/assets/images" alt="About Me" />
+            <img src={aboutImage} alt="Macdonald Muhavi" />
           </div>
         </div>
       </div>

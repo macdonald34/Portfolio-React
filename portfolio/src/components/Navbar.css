@@ -1,4 +1,3 @@
-/* Navbar.css */
 .navbar {
     position: fixed;
     top: 0;
@@ -24,7 +23,7 @@
   .nav-logo {
     font-size: 1.8rem;
     font-weight: 700;
-    color: #fff;
+    color: burlywood;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
     -webkit-background-clip: text;
@@ -38,7 +37,7 @@
   }
   
   .nav-links a {
-    color: #fff;
+    color: #da2828;
     text-decoration: none;
     font-weight: 500;
     font-size: 1.1rem;
@@ -80,7 +79,7 @@
     display: block;
     height: 3px;
     width: 100%;
-    background: #fff;
+    background: #a22929;
     border-radius: 3px;
     transition: all 0.3s ease;
   }

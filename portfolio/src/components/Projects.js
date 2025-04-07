@@ -4,12 +4,12 @@ import './Projects.css';
 const projects = [
   {
     id: 1,
-    title: 'E-commerce Website',
+    title: 'Car-Hire',
     description: 'A full-featured online store with cart functionality and payment integration.',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+    technologies: ['React', 'Node.js', 'Flask', 'Stripe'],
     image: '/project1.jpg',
     link: '#',
-    github: '#'
+    github: 'https://github.com/macdonald34/Car-Rentals'
   },
   {
     id: 2,

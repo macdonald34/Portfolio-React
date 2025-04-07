@@ -36,14 +36,15 @@
   }
   
   .skill-bar {
+    background-color: #ddd;
     height: 10px;
-    background: #edf2f7;
     border-radius: 5px;
     overflow: hidden;
   }
   
+  
   .skill-progress {
-    height: 100%;
+    height: 10px;
     border-radius: 5px;
     background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
     position: relative;
